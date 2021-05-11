@@ -31,3 +31,9 @@ function nHz(n)
   return 55*Math.pow(2,(n-9-12*(내릴 옥타브))/12);
 }
 ```
+
+## 원작자 링크
+
+[유튜브](https://youtube.com/c/wasans)
+
+[깃헙](https://github.com/wa-sans)
