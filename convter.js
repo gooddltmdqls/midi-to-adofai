@@ -125,7 +125,6 @@ for(var i=0,timeC=0;i<events.length;i++)
 }
 map.pathData+=(map.pathData[map.pathData.length-1]!='R'?'R':'H');
 map.actions.push({ "floor": map.pathData.length-1, "eventType": "SetSpeed", "beatsPerMinute": 0 });
-console.log(map.pathData.length)
 return map;
 }
 exports.conv=conv;

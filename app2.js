@@ -20,6 +20,7 @@ if (fs.existsSync('./converted.adofai')) {
 
 try {
 var sec = 'false';
+console.log('Working...');
 for(var track = 0; sec === 'false'; track++) {
     if (fs.existsSync('./converted.adofai')) {
         var sec = 'true';
