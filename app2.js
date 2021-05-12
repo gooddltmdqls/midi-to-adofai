@@ -18,12 +18,12 @@ if (fs.existsSync('./converted.adofai')) {
     return;
 }
 
-try {
 var sec = 'false';
 var ar = [];
 var preprg = 0
 console.log('Working...');
 for(var track = 0; sec === 'false'; track++) {
+    try {
     if (fs.existsSync('./converted.adofai')) {
         var sec = 'false';
         ar.push(JSON.parse(fs.readFileSync('./converted.adofai')).pathData.length);
@@ -43,7 +43,6 @@ if (preprg === prg) {
 console.log('Progress: ' + prg + '%');
 }
 var preprg = prg
-}
 } catch (err) {
     if (track === 18) {
         var ft = ar.indexOf(Math.max.apply(null, ar));
@@ -51,5 +50,11 @@ var preprg = prg
         console.log('Successfully converted fd.mid to converted.adofai\n', 'Tiles: ' + JSON.parse(fs.readFileSync('./converted.adofai')).pathData.length);
         return;
     }
-    console.log('Failed to convert midi to adofai', track);
+    var prgg = 18 - track;
+var prg = Math.round(100 / prgg);
+if (preprg === prg) {
+    } else {
+console.log('Progress: ' + prg + '%');
+}
+}
 }

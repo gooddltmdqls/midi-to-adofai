@@ -18,6 +18,8 @@ git clone https://github.com/gooddltmdqls/midi-to-adofai
 
 midi 파일을 fd.mid로 이 폴더에 저장
 
+(examplemusic 폴더에 샘플 midi파일이 있어요!)
+
 `run.bat` 실행하면 됨
 
 타일 수도 나옴
